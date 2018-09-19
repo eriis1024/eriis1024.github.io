@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class = "navbar">
+	<div>
+		<a href = "#home" class="nav-button"><b>BTL</b> Properties</a>
+		<div class = "right">
+    		<a href = "#projects" class="nav-button">Projects</a>
+    		<a href = "#about" class="nav-button">About</a>
+    		<a href = "#locations" class="nav-button">Locations</a>
+    		<a href = "#contact" class="nav-button">Contact</a>
+    	</div>
+    </div>
+</div>
+
+
+<h1 id = "home">
+	<img class = header-img src = "https://image.ibb.co/npKBre/Screen_Shot_2018_09_18_at_5_54_26_PM.png" alt = "Skyscrapers" border= "0">
+	<h2><span class = "header-text1"><b>BTL</b></span><br><span class = "header-text2"> Built to Live</span></b></h2>
+</h1>
+
+
+<div class = "top-content" id = "projects">
+	<h3 class = "body-header">PROJECTS</h3>
+	<a href = "VDLM-page.html" class = "img-container">
+		<img class = project-img src = "https://image.ibb.co/jiTMsK/Screen_Shot_2018_09_19_at_11_04_53_AM.png" alt = "6105 Vista de la Mesa" border= "0">
+		<div class = "project-img-text"> 6105 Vista de la Mesa </div>
+	</a>
+	<a href = "Outpost.html" class = "img-container">
+		<img class = project-img src = "https://image.ibb.co/dwdFHK/Outpost_backyard.png" alt = "7259 Outpost Cove Dr." border= "0">
+		<div class = "project-img-text"> 7259 Outpost Cove Dr. </div>
+	</a>
+	<a href = "Gravilla.html" class = "img-container">
+		<img class = project-img src = "https://image.ibb.co/gdxOpz/Screen_Shot_2018_09_19_at_11_12_02_AM.png" alt = "313 Gravilla St." border= "0">
+		<div class = "project-img-text"> 313 Gravilla St </div>
+	</a>
+	<div class = "img-container">
+		<img class = project-img src = "https://image.ibb.co/npKBre/Screen_Shot_2018_09_18_at_5_54_26_PM.png" alt = "Skyscrapers" border= "0">
+		<div class = "project-img-text"> More in progress... </div>
+	</div>
+</div>
+
+
+
+<div class = "content" id = "about">
+	<h3 class = "body-header">ABOUT</h3>
+	<div class = "body-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+	<div class = about-container>
+		<div>
+			<div class = about-img-container>
+				<img class = about-img src = "https://image.ibb.co/cYSHXK/nathalieken.jpg" alt = "Ken Riis" border= "0">
+				<div><span class = "about-header">KENNETH RIIS |</span><b><span class = "about-sub-header"> CEO </span></b><br><span class = "about-body"> kriis@fortress.com </span></b><br><span class = "about-body">(858)500-2420 </span></br></div>
+			</div>
+			<div class = about-img-container>
+				<img class = about-img src = "https://image.ibb.co/cYSHXK/nathalieken.jpg" alt = "Nathalie Riis" border= "0"> 
+				<div><span class = "about-header">NATHALIE RIIS |</span><b><span class = "about-sub-header"> Founder </span></b><br><span class = "about-body"> nathalieriis@me.com </span></b><br><span class = "about-body"> (619)742-9533</span></br></div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class = "content" id = "locations">
+	<h3 class = "map-header">LOCATIONS</h3>
+	<div class = "map" id="googleMap" style="width:1260px; height:550px;"></div>
+</div>
+
+
+<div class = "content" id = "contact">
+	<h3 class = "body-header">CONTACT</h3>
+	<div class = "about-container">
+    	<form action="mailto:nathalieriis@me.com" method="post" enctype="text/plain">
+			<div class = "contact-text"> First Name: <input class = "textbox" type="text" name="name"></div>
+			<div class = "contact-text"> Last Name: <input class = "textbox" type="text" name="name"></div>
+			<div class = "contact-text"> E-mail: <input class = "textbox" type="text" name="mail"></div>
+			<div class = "contact-text"> Comment: <textarea class = "textbox-comment" type="text" name="comment" rows="10" cols="80"></textarea></div> 
+			<input class = "contact-button" type = "submit" value = "Send">
+			<input class = "contact-button" type = "reset" value = "Reset">
+		</form>
+	</div>
+  </div>
+</div>
+
+
+<script>
+function myMap()
+{
+  VDLM=new google.maps.LatLng(32.821676, -117.275324);
+  Gravilla = new google.maps.LatLng(32.828777, -117.278565);
+  Outpost = new google.maps.LatLng(34.119020, -118.350338);
+  var mapOptions= {
+    center:Outpost,
+    zoom:7, scrollwheel: true, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker1 = new google.maps.Marker({
+    position: VDLM,
+  });
+  var marker2 = new google.maps.Marker({
+    position: Gravilla,
+  });
+  var marker3 = new google.maps.Marker({
+    position: Outpost,
+  });
+
+  marker1.setMap(map);
+  marker2.setMap(map);
+  marker3.setMap(map);
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4j7YIcAEbkveE2NhVtckEkRplw6yKYqU&callback=myMap"></script>
+
+
+</body>
+</html>

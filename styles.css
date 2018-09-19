@@ -1,0 +1,51 @@
+
+body{font-family:Verdana, sans-serif; font-size:15px; line-height:1.5; margin: 0;}
+
+
+h1{font-size:36px}
+h2{position: absolute; top: 280px; left: 550px;}
+h3{font-size:24px; letter-spacing: 3px}
+h4{font-size:28px}
+h5{font-size:18px}
+h6{font-size:16px}
+
+h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI", Arial, sans-serif; font-weight:400; margin:0px 0px;}
+
+.right{float:right!important}
+
+.navbar{background-color:white; padding:10px 20px 12px 10px; box-shadow:0px 10px 5px -5px black; width:1300;}
+.nav-button{border:none; display:inline-block; padding:10px 15px; vertical-align:middle; text-decoration:none; color:inherit; background-color:inherit; text-align:center; cursor:pointer; white-space:nowrap; letter-spacing: 3px;}
+.nav-button:hover{background-color:lightgray;}
+
+.header-img{opacity: 0.75; position:relative; vertical-align:bottom; vertical-align:top; width:1300px; height:600px;}
+.header-text1{font-size: 70pt; color:black; letter-spacing:3px; border-width:5px; font-weight:100; border-style:solid;}
+.header-text2{letter-spacing:6.8px; color:gray;}
+
+.top-content{background-color:white; box-shadow:0px -10px 5px -5px black; padding:10px 20px 12px 10px; width:1300; vertical-align:top}
+
+.content{background-color:white; padding:10px 20px 12px 10px; width:1300; vertical-align:top; border-top: 1px solid;}
+.body-header{padding-top: 40px; padding-bottom: 0px; padding-left:30px; letter-spacing: 6px;}
+.project-img{opacity: 0.4; position:relative; width: 350px; height: 250px}
+.project-img:hover{opacity: 0.8;}
+.project-img-text{position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); letter-spacing: 4px; background-color:rgba(255,255,255,0.7); border-style: solid; border-width: 1.5px; padding: 10px;}
+.img-container{position: relative; text-align: center; color: black; display:inline-block; padding: 30px 30px 30px 30px;}
+.body-content{padding-left: 30px; padding-top: 20px; padding-bottom: 30px}
+.about-img{width: 320px; height: 250px; padding: 10px 40px 10px 40px; display: inline-block; opacity:0.9;}
+.about-container{text-align: center; padding-bottom: 30px}
+.about-img-container{display: inline-block; text-align: center;}
+.about-header{color:black; font-weight: 300; letter-spacing: 4px}
+.about-sub-header{color:gray; font-weight: 20; letter-spacing: 3px}
+.about-body{font-size: 10pt; color:black; font-weight: 10; letter-spacing: 2px}
+.map-header{padding-top: 40px; padding-bottom: 30px; padding-left:30px; letter-spacing: 6px;}
+
+.contact-text{color:gray; padding:30px 30px 10px 30px;vertical-align: top}
+.textbox{width:600px; height:30px; border-style:solid; border-width: 2px}
+.textbox-comment{width:600px; height:200px; border-style:solid; border-width: 2px; vertical-align: top;}
+.contact-button{border:none; display:inline-block; padding:10px 20px; vertical-align:middle; text-decoration:none; color:inherit; background-color:inherit; text-align:center; cursor:pointer; white-space:nowrap; letter-spacing: 3px; font-size: 15pt}
+.contact-button:hover{background-color:lightgray;}
+
+.page-header{letter-spacing: 9px; padding-top: 30px; padding-left: 30px; padding-bottom: 30px}
+.page-img{width: 350px; height: 250px; padding: 30px 30px 30px 30px;}
+
+
+
