@@ -22,7 +22,6 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI", Arial, sans-serif; font-weight:400; m
 .header-text2{font-size: 100pt; color:white; border-width:10px; border-style:solid; border-left: 0; padding-right:20px;}
 .header-text3{font-size: 20pt; letter-spacing: 20px; color:white;}
 
-
 .top-content{background-color:white; box-shadow:0px -10px 5px -5px black; padding:10px 20px 12px 10px; width:1300; vertical-align:top}
 
 .content{background-color:white; padding:10px 20px 12px 10px; width:1300; vertical-align:top; border-top: 1px solid;}

@@ -66,7 +66,7 @@
 
 <div class = "content" id = "locations">
 	<h3 class = "map-header">LOCATIONS</h3>
-	<div class = "map" id="googleMap" style="width:1260px; height:550px;"></div>
+	<div class = "map" id="googleMap" style="width:1260px; height:620px;"></div>
 </div>
 
 
@@ -89,8 +89,7 @@
 
 
 <script>
-function myMap()
-{
+function myMap(){
   VDLM=new google.maps.LatLng(32.821676, -117.275324);
   Gravilla = new google.maps.LatLng(32.828777, -117.278565);
   Outpost = new google.maps.LatLng(34.119020, -118.350338);
@@ -115,14 +114,11 @@ function myMap()
     label: {color: 'black', fontSize: '14px', text: '7259 Outpost Cove Dr.'}
 
   });
-
   marker1.setMap(map);
   marker2.setMap(map);
   marker3.setMap(map);
-
 }
 </script>
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4j7YIcAEbkveE2NhVtckEkRplw6yKYqU&callback=myMap"></script>
 
 
