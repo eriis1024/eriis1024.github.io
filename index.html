@@ -19,8 +19,8 @@
 
 
 <h1 id = "home">
-	<img class = header-img src = "https://image.ibb.co/npKBre/Screen_Shot_2018_09_18_at_5_54_26_PM.png" alt = "Skyscrapers" border= "0">
-	<h2><span class = "header-text1"><b>BTL</b></span><br><span class = "header-text2"> Built to Live</span></b></h2>
+	<img class = header-img src="https://image.ibb.co/nDjRnU/Header_photo.jpg" alt = "Skyscrapers" width = 100%>
+	<h2><span class = "header-text1"><b>BT</span><span class = "header-text2">L</b></span><br><span class = "header-text3">Built to Live</span></b></h2>
 </h1>
 
 
@@ -45,19 +45,18 @@
 </div>
 
 
-
 <div class = "content" id = "about">
 	<h3 class = "body-header">ABOUT</h3>
-	<div class = "body-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+	<div class = "body-content"> BTL properties develops and manages high-end residential properties for sale or lease. It targets properties in Southern California that require larger amounts of capital (1 million and up) for repositioning or new development. </div>
 	<div class = about-container>
 		<div>
 			<div class = about-img-container>
-				<img class = about-img src = "https://image.ibb.co/cYSHXK/nathalieken.jpg" alt = "Ken Riis" border= "0">
-				<div><span class = "about-header">KENNETH RIIS |</span><b><span class = "about-sub-header"> CEO </span></b><br><span class = "about-body"> kriis@fortress.com </span></b><br><span class = "about-body">(858)500-2420 </span></br></div>
+				<img class = about-img src = "https://image.ibb.co/iN6NNU/IMG_5361.jpg" alt = "Ken Riis" border= "0">
+				<div><span class = "about-header">KENNETH RIIS |</span><b><span class = "about-sub-header"> Senior Managing Member </span></b><br><span class = "about-body"> Source New Investments </b><br> Management of Constuction, Sales & Leasing </b><br> kenneth@btl-properties.com </b><br>(858) 500-2420 </span></br></div>
 			</div>
 			<div class = about-img-container>
-				<img class = about-img src = "https://image.ibb.co/cYSHXK/nathalieken.jpg" alt = "Nathalie Riis" border= "0"> 
-				<div><span class = "about-header">NATHALIE RIIS |</span><b><span class = "about-sub-header"> Founder </span></b><br><span class = "about-body"> nathalieriis@me.com </span></b><br><span class = "about-body"> (619)742-9533</span></br></div> 
+				<img class = about-img src = "https://image.ibb.co/gLBYU9/DSC04552.jpg" alt = "Nathalie Riis" border= "0"> 
+				<div><span class = "about-header">NATHALIE RIIS |</span><b><span class = "about-sub-header"> Managing Member & Project Design Manager </span></b><br><span class = "about-body"> Management of Interior & Exterior Design </b><br> Design Integrity & Compliance </b><br> nathalie@btl-properties.com </b><br> (619) 742-9533</span></br></div> 
 			</div>
 		</div>
 	</div>
@@ -93,20 +92,25 @@ function myMap()
   Gravilla = new google.maps.LatLng(32.828777, -117.278565);
   Outpost = new google.maps.LatLng(34.119020, -118.350338);
   var mapOptions= {
-    center:Outpost,
-    zoom:7, scrollwheel: true, draggable: true,
+    center:VDLM,
+    zoom:13, scrollwheel: true, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
   var marker1 = new google.maps.Marker({
     position: VDLM,
+    label: {color: 'black', fontSize: '14px', text: '6105 Vista de la Mesa'}
+
   });
   var marker2 = new google.maps.Marker({
     position: Gravilla,
+    label: {color: 'black', fontSize: '14px', text: '313 Gravilla St.'}
   });
   var marker3 = new google.maps.Marker({
     position: Outpost,
+    label: {color: 'black', fontSize: '14px', text: '7259 Outpost Cove Dr.'}
+
   });
 
   marker1.setMap(map);

@@ -1,9 +1,9 @@
 
-body{font-family:Verdana, sans-serif; font-size:15px; line-height:1.5; margin: 0;}
+body{font-family:Verdana, sans-serif; font-size:15px; line-height:1.4; margin: 0;}
 
 
 h1{font-size:36px}
-h2{position: absolute; top: 280px; left: 550px;}
+h2{position: absolute; top: 275px; left: 475px;}
 h3{font-size:24px; letter-spacing: 3px}
 h4{font-size:28px}
 h5{font-size:18px}
@@ -17,9 +17,11 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI", Arial, sans-serif; font-weight:400; m
 .nav-button{border:none; display:inline-block; padding:10px 15px; vertical-align:middle; text-decoration:none; color:inherit; background-color:inherit; text-align:center; cursor:pointer; white-space:nowrap; letter-spacing: 3px;}
 .nav-button:hover{background-color:lightgray;}
 
-.header-img{opacity: 0.75; position:relative; vertical-align:bottom; vertical-align:top; width:1300px; height:600px;}
-.header-text1{font-size: 70pt; color:black; letter-spacing:3px; border-width:5px; font-weight:100; border-style:solid;}
-.header-text2{letter-spacing:6.8px; color:gray;}
+.header-img{position:relative; vertical-align:bottom; vertical-align:top; width:1300px; height:600px;}
+.header-text1{font-size: 100pt; color:white; letter-spacing:30px; border-width:10px; border-style:solid; border-right: 0; padding-left:20px;}
+.header-text2{font-size: 100pt; color:white; border-width:10px; border-style:solid; border-left: 0; padding-right:20px;}
+.header-text3{font-size: 20pt; letter-spacing: 20px; color:white;}
+
 
 .top-content{background-color:white; box-shadow:0px -10px 5px -5px black; padding:10px 20px 12px 10px; width:1300; vertical-align:top}
 
@@ -29,13 +31,13 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI", Arial, sans-serif; font-weight:400; m
 .project-img:hover{opacity: 0.8;}
 .project-img-text{position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); letter-spacing: 4px; background-color:rgba(255,255,255,0.7); border-style: solid; border-width: 1.5px; padding: 10px;}
 .img-container{position: relative; text-align: center; color: black; display:inline-block; padding: 30px 30px 30px 30px;}
-.body-content{padding-left: 30px; padding-top: 20px; padding-bottom: 30px}
-.about-img{width: 320px; height: 250px; padding: 10px 40px 10px 40px; display: inline-block; opacity:0.9;}
-.about-container{text-align: center; padding-bottom: 30px}
-.about-img-container{display: inline-block; text-align: center;}
+.body-content{padding-left: 30px; padding-top: 20px; padding-bottom: 30px;}
+.about-img{width: 280px; height: 390px; padding: 20px 40px 25px 40px; display: inline-block; opacity:0.9;}
+.about-container{text-align: center; padding-bottom: 30px;}
+.about-img-container{display: inline-block; text-align: center; padding-left: 60px;}
 .about-header{color:black; font-weight: 300; letter-spacing: 4px}
-.about-sub-header{color:gray; font-weight: 20; letter-spacing: 3px}
-.about-body{font-size: 10pt; color:black; font-weight: 10; letter-spacing: 2px}
+.about-sub-header{color:gray; font-weight: 20; letter-spacing: 1px}
+.about-body{font-size: 10pt; color:black; font-weight: 10; letter-spacing: 1px}
 .map-header{padding-top: 40px; padding-bottom: 30px; padding-left:30px; letter-spacing: 6px;}
 
 .contact-text{color:gray; padding:30px 30px 10px 30px;vertical-align: top}
@@ -46,6 +48,19 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI", Arial, sans-serif; font-weight:400; m
 
 .page-header{letter-spacing: 9px; padding-top: 30px; padding-left: 30px; padding-bottom: 30px}
 .page-img{width: 350px; height: 250px; padding: 30px 30px 30px 30px;}
+
+.slideshow-container {max-width: 1000px; position: relative; margin: auto; padding-top: 30px;}
+.slides {display: none;}
+.prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0;}
+.next {right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+.text {color: white; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;}
+.fade {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+
 
 
 
