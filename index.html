@@ -72,15 +72,17 @@
 <div class = "content" id = "contact">
 	<h3 class = "body-header">CONTACT</h3>
 	<div class = "about-container">
-		<form action="http://formspree.io/eriis1024@gmail.com" method="POST">
+		<form name = "input" method = "POST" action = "http://formspree.io/eriis1024@gmail.com">
 			<!-- <input type="email" name="_replyto">     <textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
     	
-			<div class = "contact-text"> First Name: <input class = "textbox" type="text" name="name"></div>
-			<div class = "contact-text"> Last Name: <input class = "textbox" type="text" name="name"></div>
-			<div class = "contact-text"> E-mail: <input class = "textbox" type="email" name="_replyto"></div>
-			<div class = "contact-text"> Comment: <textarea class = "textbox-comment" type = "text" name = "mail" rows="10" cols="80"></textarea></div> 
+			<div class = "contact-text"> First Name: <input class = "textbox" type = "text" name = "Name"></div>
+			<div class = "contact-text"> Last Name: <input class = "textbox" type = "text" name = "Name"></div>
+			<div class = "contact-text"> E-mail: <input class = "textbox" type = "email" name = "_replyto"></div>
+			<div class = "contact-text"> Comment: <textarea class = "textbox-comment" type = "text" name = "message" rows="10" cols="80"></textarea></div> 
 			<input class = "contact-button" type = "submit" value = "Send">
 			<input class = "contact-button" type = "reset" value = "Reset">
+			<input type = "hidden" name = "_subject" value = "Enter your subject here"/>
+			<input type = "hidden" name = "_next" value = "index.html"/>
 		</form>
 	</div>
   </div>
